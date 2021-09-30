@@ -1,0 +1,83 @@
+.about-us__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 768px;
+    padding-right: 63px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1138px;
+    padding-right: 128px;
+  }
+}
+
+.about-us__description {
+  @media screen and (min-width: 768px) {
+    margin-left: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 67px;
+    margin-left: 76px;
+  }
+}
+
+.about-us__title {
+  margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    text-align-last: left;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 10px;
+  }
+}
+
+.about-us__text {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 392px;
+  }
+}
+
+.about-us__text + .about-us__text {
+  margin-top: 20px;
+}
+
+.about-us__button {
+  display: block;
+  padding: 0;
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 18px;
+  line-height: 3.61;
+  text-align: center;
+  color: var(--button-second-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 23px;
+  }
+  @media screen and (min-width: 1199.99px) {
+    display: none;
+  }
+}
+
+.about-us__text--below {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}

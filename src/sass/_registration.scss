@@ -1,0 +1,206 @@
+.registration {
+  padding-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 80px;
+  }
+}
+
+.registration__frame {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px 12px 34px 12px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  @media screen and (min-width: 320px) {
+    width: 290px;
+    height: 510px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 350px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 634px;
+    height: 260px;
+    padding: 54px 22px 54px 34px;
+    background: #fffff9;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px;
+    transform: rotate(0);
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 822px;
+    min-height: 260px;
+    padding: 54px 100px 54px 108px;
+  }
+}
+
+.form-text {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.registration-text {
+  @media screen and (min-width: 768px) {
+    margin-right: 60px;
+  }
+}
+.registration-text__one,
+.registration-text__two {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.registration-text__one {
+  max-width: 118px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    min-width: 118px;
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 135px;
+    margin-bottom: 30px;
+  }
+}
+.registration-text__two {
+  margin-top: 0;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+.registration-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 0;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+.registration-form::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  top: -10px;
+  border: 1px solid rgba(171, 129, 108, 0.5);
+  @media screen and (min-width: 768px) {
+    width: 190px;
+    top: 75px;
+    left: -120px;
+    transform: rotate(90deg);
+  }
+}
+.registration-form__join {
+  max-width: 220px;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 17px;
+  text-align: center;
+  color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 17px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 260px;
+    margin-bottom: 13px;
+  }
+}
+.section-title--mobile {
+  @media screen and (max-width: 767px) {
+    display: block;
+    line-height: 1.51;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.section-title--tablet {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.registration-form__input {
+  width: 100%;
+  margin-top: 0;
+  padding-bottom: 2px;
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #ab816c;
+  cursor: pointer;
+}
+.registration-form__input:not(:last-child) {
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+}
+.registration-form__input:not(:placeholder-shown) {
+  border-bottom: 1px solid #733f3f;
+}
+.registration-form__input:invalid:not(:focus) {
+  border: 1px solid red;
+}
+
+.registration-form__input:-webkit-autofill,
+.registration-form__input:-webkit-autofill:hover,
+.registration-form__input:-webkit-autofill:focus {
+  -webkit-text-fill-color: currentColor;
+}
+.registration-form__input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.registration-form__input::placeholder {
+  color: rgba(171, 129, 108, 0.5);
+}
+
+.btn--centre {
+  display: flex;
+  margin-top: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,14 @@
+#toTop {
+    width: 130px;
+    position: fixed;
+    bottom: -10px; /* отступ кнопки от нижнего края страницы*/
+    right: -50px;
+    cursor: pointer;
+    display: none;
+    fill: #ab816c;
+
+    @media screen and (max-width: 1199px) {
+        bottom: 18px;
+        right: -74px;
+    }
+}
